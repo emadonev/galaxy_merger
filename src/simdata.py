@@ -1,20 +1,12 @@
 # importing everything
-import os
 import numpy as np
-import time
-
-from astropy.io import fits
-from astropy.utils.data import download_file
-from astropy.visualization import simple_norm
-
-import matplotlib.pyplot as plt
 
 import torch
 from torch.utils.data import DataLoader
 from torch.utils.data import TensorDataset
-import torch.nn as nn
+
 from sklearn.model_selection import train_test_split
-import pandas as pd
+
 
 # loading the data
 hdu_pristine = fits.open('../input/pristine.fits') # opening the pristine dataset
