@@ -4,7 +4,9 @@ import numpy as np
 import torch
 from torch.utils.data import DataLoader
 from torch.utils.data import TensorDataset
-
+from astropy.io import fits
+from astropy.utils.data import download_file
+from astropy.visualization import simple_norm
 from sklearn.model_selection import train_test_split
 
 
